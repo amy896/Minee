@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.wrap > *{
+	margin: 0 auto;
+}
+
+.logo_wrap{
+	width: 500px;
+}
+
+
+.search_wrap{
+	width: 449px;
+	height: 40px;
+	margin-top: 20px;	
+    position: relative;
+}
+
+.search_wrap input[type='text']{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-inline-start: 20px;
+    padding-inline-end: 30px;
+  	border: none;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .78);
+    border-radius: 22px;
+}
+
+
+.search_wrap .search_btn{
+	position: absolute;
+	margin: 11px;
+	right: 0;
+}
+
+
+
+
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+input:focus {outline:none;}
