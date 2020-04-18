@@ -23,5 +23,18 @@ public class HomeController {
 	}
 	
 	
+	@RequestMapping(value = "resultAll", method = RequestMethod.GET)
+	public void resultAll() {
+	}
+	
+	@RequestMapping(value = "resultImage", method = RequestMethod.GET)
+	public void resultImage() {
+	}
+	
+	@RequestMapping(value = "resultVideo", method = RequestMethod.GET)
+	public void resultVideo() {
+	}
+	
+	
 	
 }
