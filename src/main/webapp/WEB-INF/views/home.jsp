@@ -6,8 +6,7 @@
 	request.setAttribute("contextPath", contextPath);
 %>
 <%@ page session="false"%>
-<html>
-<head>
+<%@ include file = "/WEB-INF/views/header.jsp"%>
 <title>Minee</title>
 <link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
 <link rel="stylesheet" type="text/css" href="resources/css/home.css" />
