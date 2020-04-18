@@ -12,34 +12,6 @@
 <link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
 <link rel="stylesheet" type="text/css" href="resources/css/home.css" />
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.js"
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-	crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-
-function keywordSearch() {
-	var keyword = $(".keywordStr").val();
-	if(keyword == ""){
-		confirm("검색어를 입력해주세요!");
-	}else{
-		confirm(keyword);
-
-		$.ajax({
-			url : "/search",
-			data : {"keyword":keyword},
-			type : "get",
-			dataType : "json"
-		});
-		return false;
-	}
-}
-
-
-
-
-</script>
-
 </head>
 <body>
 	<div class="wrap">
@@ -48,11 +20,11 @@ function keywordSearch() {
 			<img alt="Minee LOGO" src="http://placehold.it/500x90">
 		</div>
 
-		<div class="search_wrap">
-			<input type="text" class="keywordStr"> 
-			 <a href="" onclick="keywordSearch();"><i class="fas fa-search search_btn"></i></a>
-		</div>
-		
+		<form class="search_wrap" action="search" method="get" id="searchForm">
+			<input type="text" class="keywordStr" name="keyword" placeholder="Minee 검색"> 
+			<i class="fas fa-search search_btn"></i>
+		</form>
+
 		<div class="ad_wrap">
 			<img alt="Minee LOGO" src="http://placehold.it/728x90">
 		</div>
