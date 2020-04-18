@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
+.wrap{
+	margin-top: 300px;
+}
+
 .wrap > *{
 	margin: 0 auto;
 }
 
 .logo_wrap{
 	width: 500px;
+}
+
+.ad_wrap{
+	width: 728px;
+	margin-top: 20px;
 }
 
 
@@ -27,6 +36,7 @@
   	border: none;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .78);
     border-radius: 22px;
+    margin: 0 auto;
 }
 
 
