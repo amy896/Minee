@@ -1,1 +1,9 @@
 @charset "UTF-8";
+
+.resultHeader{
+	border: 5px solid red;
+}
+
+.resultHeader > *{
+	border: 1px solid black;
+}

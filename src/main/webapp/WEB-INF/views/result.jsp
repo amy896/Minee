@@ -11,5 +11,7 @@
 <body>
 	<%@ include file="/WEB-INF/views/resultHeader.jsp" %>
 	<h1>result page</h1>
+	
+	
 </body>
 </html>
