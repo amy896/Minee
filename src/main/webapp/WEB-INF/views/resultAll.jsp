@@ -8,9 +8,9 @@
 <link rel="stylesheet" type="text/css" href="resources/css/resultHeader.css" />
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
+</script>
 <body>
 	<%@ include file="/WEB-INF/views/resultHeader.jsp" %>
-	<h1>result page</h1>
 	
 	
 </body>
