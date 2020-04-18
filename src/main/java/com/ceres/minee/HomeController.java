@@ -19,7 +19,7 @@ public class HomeController {
 	@RequestMapping(value = "search", method = RequestMethod.GET)
 	public String search(String keyword) {
 		System.out.println("keyword : " + keyword);
-		return "result";
+		return "resultAll";
 	}
 	
 	
