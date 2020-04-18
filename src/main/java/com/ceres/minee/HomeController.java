@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
-		
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
 		return "home";
@@ -21,20 +21,5 @@ public class HomeController {
 		System.out.println("keyword : " + keyword);
 		return "resultAll";
 	}
-	
-	
-	@RequestMapping(value = "resultAll", method = RequestMethod.GET)
-	public void resultAll() {
-	}
-	
-	@RequestMapping(value = "resultImage", method = RequestMethod.GET)
-	public void resultImage() {
-	}
-	
-	@RequestMapping(value = "resultVideo", method = RequestMethod.GET)
-	public void resultVideo() {
-	}
-	
-	
 	
 }
