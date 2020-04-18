@@ -16,7 +16,7 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	@RequestMapping(value = "search", method = RequestMethod.GET)
 	public String search(String keyword) {
 		System.out.println("keyword : " + keyword);
 		return "results";
