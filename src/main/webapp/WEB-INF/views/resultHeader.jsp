@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+
+
 <div class="resultHeader">
 
 	<div class="logo_wrap">
@@ -9,8 +11,8 @@
 	</div>
 
 	<form class="search_wrap" action="search" method="get" id="searchForm">
-		<input type="text" class="keywordStr" name="keyword"
-			placeholder="Minee 검색"> <i class="fas fa-search search_btn"></i>
+		<input type="text" class="keywordStr" name="keyword"placeholder="Minee 검색"> 
+		<i class="fas fa-search search_btn"></i>
 	</form>
 
 
