@@ -17,7 +17,7 @@
 	<div class="wrap">
 	
 		<div class="logo_wrap">
-			<img alt="Minee LOGO" src="http://placehold.it/500x90">
+			<img alt="Minee LOGO" src="../resources/img/mainLogo.png">
 		</div>
 
 		<form class="search_wrap" action="search" method="get" id="searchForm">
