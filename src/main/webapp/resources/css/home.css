@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .wrap{
-	margin-top: 300px;
+	margin-top: 250px;
 }
 
 .wrap > *{
@@ -14,7 +14,7 @@
 
 .ad_wrap{
 	width: 728px;
-	margin-top: 20px;
+	margin-top: 102px;
 }
 
 
