@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Minee</title>
 </head>
 <body>
 	<h1>result page</h1>
-
 </body>
 </html>
