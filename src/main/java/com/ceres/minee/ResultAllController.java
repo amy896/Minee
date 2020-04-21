@@ -15,6 +15,7 @@ import com.ceres.minee.vo.ResultItem;
 
 @Controller
 public class ResultAllController {
+	private final int DATA_MAX_PER_PAGE = 10;
 	ArrayList<ResultItem> results;
 	Pager pager;
 	Calendar cal = Calendar.getInstance();
@@ -27,17 +28,30 @@ public class ResultAllController {
 		}
 		
 		pager = new Pager();
+		pager.setLastPage(results.size(), DATA_MAX_PER_PAGE);
+		
 	}
 	
 	
 	@RequestMapping(value = "resultAll", method = RequestMethod.GET)
 	public String resultAll(@RequestParam("keyword") String keyword, @RequestParam("page") int currentPage, Model model){
-		final int LIST_SIZE = results.size();
-		if((currentPage > 0) && (currentPage <= LIST_SIZE)) {
+		final int LIST_PAGE = pager.getLastPageNum();
+		if((currentPage > 0) && (currentPage <= LIST_PAGE)) {
+			//한페이지에 들어가는 리스트
+			ArrayList<ResultItem> resultsList = new ArrayList<ResultItem>();
+			final int START_INDEX = (currentPage - 1) * DATA_MAX_PER_PAGE;
+			final int END_CONDITION = START_INDEX + DATA_MAX_PER_PAGE;
+			final int ORIGINAL_SIZE = results.size();
+			for(int index = START_INDEX; index < END_CONDITION && index < ORIGINAL_SIZE; index++) {
+				resultsList.add(results.get(index));
+			}
+			
+			
 			// ...(다른 작업)...
-			model.addAttribute("resultList",results);
+			model.addAttribute("resultList",resultsList);
+			
 			// 페이징
-			pager.setLastPageNum(LIST_SIZE);
+			pager.setLastPageNum(LIST_PAGE);
 			pager.setBlock(currentPage);
 			pager.addPagerToModel(model);
 			
