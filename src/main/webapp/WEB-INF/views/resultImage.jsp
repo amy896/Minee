@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ include file = "/WEB-INF/views/header.jsp"%>
 <% String keyword = (String) session.getAttribute("keyword");%> 
 		<title>
@@ -9,109 +9,18 @@
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/resultHeader.jsp" %>
-	
-	<div class="result_img_container">
-		<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-		
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-		
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
-				<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>		<div class="image_item">
-			<a href="#">
-				<img src="http://placehold.it/116x65" />
-				<p class="image_title item_info">title 영역입니다title</p>
-			<p class="image_url info">url 영역입니다 </p>
-			</a>
-		</div>
 
+
+	<div class="result_img_container">
+		<c:forEach items="${galleryItemList }" var="galleryItem">
+			<div class="image_item">
+				<a href="#"> <img src="${galleryItem.imgUrl }" />
+					<p class="image_title item_info">${galleryItem.title }</p>
+					<p class="image_url info">${galleryItem.url }</p>
+				</a>
+			</div>
+		</c:forEach>
 	</div>
-		
+
 </body>
 </html>
