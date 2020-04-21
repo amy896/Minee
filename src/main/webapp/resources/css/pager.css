@@ -8,3 +8,8 @@
 .pager ul li {
 	display: inline;
 }
+
+.pager .selected {
+	color: orange;
+	font-weight: bold;
+}
