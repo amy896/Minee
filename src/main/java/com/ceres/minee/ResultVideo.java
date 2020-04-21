@@ -9,6 +9,7 @@ public class ResultVideo {
 	
 	@RequestMapping(value = "resultVideo", method = RequestMethod.GET)
 	public void resultVideo() {
+		
 	}
 	
 }
