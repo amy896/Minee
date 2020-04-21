@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.ceres.minee.vo.ResultItem"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,7 +17,7 @@
 	</head>
 	<body>
 		<%@ include file="/WEB-INF/views/resultHeader.jsp" %>
-		
+		<% ArrayList<ResultItem> list = (ArrayList<ResultItem>)request.getAttribute("resultList");%>
 
 		<div calss="resultAllContainer">
 			<ul>
@@ -33,5 +35,10 @@
 				</li>
 			</ul>
 		</div>
+		
+		<!-- 페이징 -->
+		<%@ include file="/WEB-INF/views/pager.jsp" %>
+		<!-- ~페이징 -->
+		
 	</body>
 </html> 
