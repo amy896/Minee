@@ -41,7 +41,7 @@ public class ResultAllController {
 			pager.setBlock(currentPage);
 			pager.addPagerToModel(model);
 			
-			return "resulAll";
+			return "resultAll";
 			}
 		else
 			return "wrongAccess";
