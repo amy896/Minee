@@ -46,8 +46,7 @@ public class ResultAllController {
 				resultsList.add(results.get(index));
 			}
 			
-			
-			// ...(다른 작업)...
+			model.addAttribute("keyword", keyword);
 			model.addAttribute("resultList",resultsList);
 			
 			// 페이징

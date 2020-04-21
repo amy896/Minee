@@ -17,9 +17,9 @@
 	</div>
 	
 	<div class="tab_container">
-		<button class="tab_btn" onclick="location.href='/resultAll'">통합</button>
-		<button class="tab_btn" onclick="location.href='/resultImage'">이미지</button>
-		<button class="tab_btn" onclick="location.href='/resultVideo'">비디오</button>
+		<button class="tab_btn" onclick="location.href='/resultAll?keyword=${ keyword }&page=1'">통합</button>
+		<button class="tab_btn" onclick="location.href='/resultImage?keyword=${ keyword }&page=1'">이미지</button>
+		<button class="tab_btn" onclick="location.href='/resultVideo?keyword=${ keyword }&page=1'">비디오</button>
 		<select name="period" class="select_period">
 			<option selected="selected" value="allTime">모든시간</option>
 			<option value="aDayAgo">지난 1일</option>
