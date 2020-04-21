@@ -15,7 +15,7 @@
 	</div>
 	
 	<div class="tab_container">
-		<button class="tab_btn" onclick="location.href='/resultAll'">통합</button>
+		<button class="tab_btn" onclick="location.href='/search'">통합</button>
 		<button class="tab_btn" onclick="location.href='/resultImage'">이미지</button>
 		<button class="tab_btn" onclick="location.href='/resultVideo'">비디오</button>
 		<select name="period" class="select_period">
