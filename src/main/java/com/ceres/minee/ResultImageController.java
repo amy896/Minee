@@ -9,20 +9,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class ResultImageController {
 	
-	public void tempSetFianlResults() {
-		
-	}
+	private ArrayList<String> finalResults;
 	
-	@RequestMapping(value = "resultImage", method = RequestMethod.GET)
-	public void resultImage() {
-		ArrayList<String> finalResults = new ArrayList();
+	public void tempSetFianlResults() {
+		finalResults = new ArrayList();
 		finalResults.add("Hi,");
 		finalResults.add("Hello~");
 		finalResults.add("LOL");
 	}
 	
-	public boolean nextPage(int pageNumber) {
-		return true;
+	@RequestMapping(value = "resultImage", method = RequestMethod.GET)
+	public void resultImage() {
 	}
 	
 }
