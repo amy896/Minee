@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-body *{
-	padding:0px;
-	margin: 0px;
-}
-
 .result_img_container{
 	width: 99%;
 	margin: 20px auto;

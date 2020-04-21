@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
 .result_video_container{
-	margin: 0 auto;
+	margin: 20px auto;
 	max-width: 800px;
 }
 
 .video_item {
 	overflow: hidden;
-	padding: 10px;
-	
+	padding: 0px 10px 10px 10px;	
 }
 
 .video_item > *{
