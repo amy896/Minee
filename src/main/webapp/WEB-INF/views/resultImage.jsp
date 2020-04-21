@@ -12,15 +12,17 @@
 
 
 	<div class="result_img_container">
-		<c:forEach items="${galleryItemList }" var="galleryItem">
+		<c:forEach items="${ galleryItemList }" var="galleryItem">
 			<div class="image_item">
-				<a href="#"> <img src="${galleryItem.imgUrl }" />
-					<p class="image_title item_info">${galleryItem.title }</p>
-					<p class="image_url info">${galleryItem.url }</p>
+				<a href="#"> <img src="${ galleryItem.imgUrl }" />
+					<p class="image_title item_info">${ galleryItem.title }</p>
+					<p class="image_url info">${ galleryItem.url }</p>
 				</a>
 			</div>
 		</c:forEach>
 	</div>
-
+	
+	
+	<%@ include file="/WEB-INF/views/pager.jsp" %>
 </body>
 </html>
