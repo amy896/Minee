@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%@ include file="/WEB-INF/views/header.jsp"%>
-<title><%=request.getParameter("keyword") %></title>
-<link rel="stylesheet" type="text/css"
-	href="resources/css/resultVideo.css" />
+
+<%@ include file = "/WEB-INF/views/header.jsp"%>
+<% String keyword = (String) session.getAttribute("keyword");%> 
+		<title>
+			<%=keyword%> - Minee 검색 </title>
+	<link rel="stylesheet" type="text/css" href="resources/css/resultImage.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/resultVideo.css" />
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/resultHeader.jsp"%>
