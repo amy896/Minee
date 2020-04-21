@@ -4,12 +4,17 @@
 <%@ include file = "/WEB-INF/views/header.jsp"%>
 
 		<title>
-			<%=request.getParameter("keyword") %>
+			<%=request.getParameter("keyword")%> - Minee 검색 
 		</title>
 		<link rel="stylesheet" type="text/css" href="resources/css/resultAll.css" />
 	</head>
 	<body>
-		<%@ include file="/WEB-INF/views/resultHeader.jsp" %>	
+		<%@ include file="/WEB-INF/views/resultHeader.jsp" %>
+		<% 
+		String keyword = request.getParameter("keyword");
+		request.setAttribute("keyword", keyword);
+		%>
+		
 		<div calss="resultAllContainer">
 			<ul>
 				<li class ="resultItem">
