@@ -7,7 +7,7 @@
 	<ul>
 
 		<c:if test="${ pager.currentPage > 10 }">
-			<li><a href="?page=${ pager.firstNumOfBlock - 1 }">◀</a></li>
+			<li><a href="?keyword=${ keyword }&page=${ pager.firstNumOfBlock - 1 }">◀</a></li>
 		</c:if>
 
 		<c:forEach var="i" begin="${ pager.firstNumOfBlock }"
@@ -19,7 +19,7 @@
 						<li class="selected">${ i }</li>
 					</c:when>
 					<c:otherwise>
-						<li><a href="?page=${ i }">${ i }</a></li>
+						<li><a href="?keyword=${ keyword }&page=${ i }">${ i }</a></li>
 					</c:otherwise>
 				</c:choose>
 
@@ -27,7 +27,7 @@
 		</c:forEach>
 
 		<c:if test="${ pager.lastPageNum > pager.lastNumOfBlock }">
-			<li><a href="?page=${ pager.lastNumOfBlock + 1 }">▶</a></li>
+			<li><a href="?keyword=${ keyword }&page=${ pager.lastNumOfBlock + 1 }">▶</a></li>
 		</c:if>
 
 	</ul>

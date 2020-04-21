@@ -2,9 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ include file = "/WEB-INF/views/header.jsp"%>
-<% String keyword = (String) session.getAttribute("keyword");%> 
-		<title>
-			<%=keyword%> - Minee 검색 </title>
+	<title>${ keyword } - Minee 검색 </title>
 	<link rel="stylesheet" type="text/css" href="resources/css/resultImage.css" />
 </head>
 <body>
