@@ -2,6 +2,7 @@ package com.ceres.minee;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,7 +23,7 @@ public class ResultAllController {
 		results = new ArrayList<ResultItem>();
 		
 		for(int i=0; i<30; i++) {
-		results.add(new ListItem("네이버"+i, "http://www.naver.com", cal, "네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요."));
+		results.add(new ListItem("네이버"+i, "http://www.naver.com", new Date(), "네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요."));
 		}
 		
 		pager = new Pager();

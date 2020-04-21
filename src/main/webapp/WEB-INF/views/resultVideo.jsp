@@ -22,7 +22,7 @@
 							<a href="${videoItem.url }">${videoItem.title }</a>
 						</dt>
 						<dd class="video_content">${videoItem.dsc }</dd>
-						<dd class="video_date">${videoItem.date }</dd>
+						<dd class="video_date"><fmt:formatDate pattern="yyyy.MM.dd" value="${videoItem.date}"/></dd>
 					</dl>
 					</li>
 
