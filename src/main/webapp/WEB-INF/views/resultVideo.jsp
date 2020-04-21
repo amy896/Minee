@@ -11,11 +11,12 @@
 	<div class="result_video_container">
 		<ul>
 			<li class="video_item">
-				<a href="#"> <img src="http://placehold.it/116x65" /></a>
+				<a href="#"> <img src="http://placehold.it/116x70" /></a>
 				<dl class="video_item_info">
+					<dd class="video_url"><a href="#"> url 영역입니다.</a></dd>
 					<dt class="video_title"><a href="#">제목영역 입니다.</a></dt>
 					<dd class="video_content">
-						CSS Reset은 스타일 요소에 대한 깨끗한 슬레일관성을 강화하는데..
+						컨텐츠 영역입니다.
 					</dd>
 					<dd class="video_date">2020.02.15</dd>
 				</dl>

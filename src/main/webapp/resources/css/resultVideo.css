@@ -30,12 +30,12 @@
 }
 
 
-.video_title{
+.video_title, .video_content{
 	font-size: 13px;
 	
 }
 
-.video_content, .video_date{
+.video_date, .video_url{
 	font-size: 12px;
 	
 }
@@ -44,5 +44,4 @@
 	font-size: 12px;
 	color: #8f8f8f;
 	position: absolute;
-	bottom: 2px;
 }

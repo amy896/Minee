@@ -10,7 +10,7 @@
 .result_img_container .image_item{
 	box-sizing: border-box;
 	float: left;
-	padding: 10px 5px;
+	padding: 0px 5px 10px;
 }
 
 .result_img_container .image_item img{
