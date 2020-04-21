@@ -19,9 +19,9 @@ public class ResultImageController {
 	private List<GalleryItem> originalGalleryList;
 	private Pager pager;
 	
-	// 임시영역!!
-	// 서비스에서 해야 하는 부분!!
 	public ResultImageController() {
+		// 임시영역!!
+		// 서비스에서 해야 하는 부분!!
 		originalGalleryList = new ArrayList<GalleryItem>();
 		for(int i=0;i<20;i++) {
 			GalleryItem galleryItem = new GalleryItem("title" + i, "http://www.naver.com", "http://placehold.it/116x70");

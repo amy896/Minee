@@ -2,12 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ include file="/WEB-INF/views/header.jsp"%>
-<title><%=request.getParameter("keyword")%></title>
-<link rel="stylesheet" type="text/css"
-	href="resources/css/resultVideo.css" />
+	<title>${ keyword } - Minee 검색 </title>
+	<link rel="stylesheet" type="text/css" href="resources/css/resultVideo.css" />
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/resultHeader.jsp"%>
+	
 	<div class="result_video_container">
 		<ul>
 			<c:forEach items="${videoItemList }" var="videoItem">
@@ -28,5 +28,8 @@
 
 			</c:forEach>
 		</ul>
+	</div>
+	
+	<%@ include file="/WEB-INF/views/pager.jsp" %>
 </body>
 </html>
