@@ -1,33 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%
-	String contextPath = request.getContextPath();
-	request.setAttribute("contextPath", contextPath);
-%>
 <%@ page session="false"%>
 <%@ include file = "/WEB-INF/views/header.jsp"%>
 <title>Minee</title>
 <link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
 <link rel="stylesheet" type="text/css" href="resources/css/home.css" />
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<script type="text/javascript">
+
+</script>
+
 </head>
 <body>
-	<div class="wrap">
+	<div class="home_container">
+		<img class="home_logo" alt="Minee LOGO" src="../resources/img/mainLogo.png">
 	
-		<div class="logo_wrap">
-			<img alt="Minee LOGO" src="../resources/img/mainLogo.png">
-		</div>
-
-		<form class="search_wrap" action="search" method="get" id="searchForm">
-			<input type="text" class="keywordStr" name="keyword" placeholder="Minee 검색"> 
-			<i class="fas fa-search search_btn"></i>
+		<form class="search_form" action="search" method="get" id="searchForm">
+			<input type="text" name="keyword" placeholder="Minee 검색">
+			<button class="search_btn"></button>
 		</form>
-
-		<div class="ad_wrap">
-			<img alt="Minee LOGO" src="http://placehold.it/728x90">
-		</div>
-
+		
+		<!-- 
+		<img alt="Minee LOGO" src="http://placehold.it/728x90" class="ad">
+		 -->	
 	</div>
 </body>
 </html>

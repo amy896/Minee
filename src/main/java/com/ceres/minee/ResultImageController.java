@@ -22,7 +22,7 @@ public class ResultImageController {
 	}
 	
 	public boolean nextPage(int pageNumber) {
-		
+		return true;
 	}
 	
 }
