@@ -30,7 +30,7 @@ public class ResultAllController {
 	
 	
 	@RequestMapping(value = "resultAll", method = RequestMethod.GET)
-	public String resultAll(@RequestParam("page") int currentPage, Model model){
+	public String resultAll(@RequestParam("keyword") String keyword, @RequestParam("page") int currentPage, Model model){
 		final int LIST_SIZE = results.size();
 		if((currentPage > 0) && (currentPage <= LIST_SIZE)) {
 			// ...(다른 작업)...
@@ -40,7 +40,7 @@ public class ResultAllController {
 			pager.setBlock(currentPage);
 			pager.addPagerToModel(model);
 			
-			return "resulAll";
+			return "resultAll";
 			}
 		else
 			return "wrongAccess";

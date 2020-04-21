@@ -17,7 +17,7 @@
 		<img class="home_logo" alt="Minee LOGO" src="../resources/img/mainLogo.png">
 	
 		<form class="search_form" action="search" method="get" id="searchForm">
-			<input type="text" name="keyword" placeholder="Minee 검색">
+			<input type="text" name="keyword" id="keyword" placeholder="Minee 검색">
 			<button class="search_btn"></button>
 		</form>
 		
