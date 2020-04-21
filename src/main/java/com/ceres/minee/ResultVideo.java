@@ -2,6 +2,7 @@ package com.ceres.minee;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -19,7 +20,7 @@ public class ResultVideo {
 		List<VideoItem> videoItemList = new ArrayList<VideoItem>();
 		
 		for(int i=0;i<20;i++) {
-			VideoItem video = new VideoItem("title"+i, "http://www.naver.com", Calendar.getInstance(), "dcs"+i,"http://placehold.it/116x70");
+			VideoItem video = new VideoItem("title"+i, "http://www.naver.com", new Date(), "dcs"+i,"http://placehold.it/116x70");
 			videoItemList.add(video);			
 		}
 		
