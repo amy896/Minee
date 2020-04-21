@@ -2,8 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@ include file="/WEB-INF/views/header.jsp"%>
-<meta charset="UTF-8">
-<title>Minee</title>
+<title><%=request.getParameter("keyword") %></title>
 <link rel="stylesheet" type="text/css"
 	href="resources/css/resultVideo.css" />
 </head>
