@@ -56,10 +56,10 @@ public class ResultAllController {
 			pager.setBlock(currentPage);
 			pager.addPagerToModel(model);
 			
-			return "resultAll";
+			return "result/resultAll";
 			}
 		else
-			return "wrongAccess";
+			return "common/wrongAccess";
 	}
 	
 }

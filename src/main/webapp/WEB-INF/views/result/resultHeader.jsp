@@ -8,7 +8,7 @@
 	<div class="search_container">
 
 		<a href= "/">
-			<img alt="Minee LOGO" src="../resources/img/resultLogo.png">
+			<img alt="Minee LOGO" src="../resources/img/result/resultLogo.png">
 		</a>
 		<form class="search_form" action="search" method="get">
 			<input type="text" name="keyword" placeholder="Minee 검색">

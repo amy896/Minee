@@ -54,10 +54,10 @@ public class ResultImageController {
 			pager.setBlock(currentPage);
 			pager.addPagerToModel(model);
 			
-			return "resultImage";
+			return "result/resultImage";
 		}
 		else 
-			return "wrongAccess";
+			return "result/wrongAccess";
 	}
 	
 }

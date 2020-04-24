@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="home_container">
-		<img class="home_logo" alt="Minee LOGO" src="../resources/img/mainLogo.png">
+		<img class="home_logo" alt="Minee LOGO" src="../resources/img/home/mainLogo.png">
 	
 		<form class="search_form" action="search" method="get" id="searchForm">
 			<input type="text" name="keyword" id="keyword" placeholder="Minee 검색">

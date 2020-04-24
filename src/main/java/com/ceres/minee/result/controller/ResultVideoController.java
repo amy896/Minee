@@ -56,10 +56,10 @@ public class ResultVideoController {
 			pager.setBlock(currentPage);
 			pager.addPagerToModel(model);
 
-			return "resultVideo";
+			return "result/resultVideo";
 		}
 		else 
-			return "wrongAccess";
+			return "result/wrongAccess";
 	}
 	
 }
