@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet" type="text/css" href="resources/css/pager.css" />
-<!DOCTYPE html>
+    pageEncoding="UTF-8"%>
+
+<!-- 결과 컨테이너 시작은 resultHeader.jsp에서 -->
+
+<!-- 페이징 -->
 <div class="pager">
 	<ul>
 
@@ -32,3 +33,14 @@
 
 	</ul>
 </div>
+<!-- ~페이징 -->
+
+</div>
+<!-- ~결과 컨테이너 -->
+
+
+<!-- 광고 -->
+<div class="result_img_ad">
+	<img src="${ galleryItem.imgUrl }" />
+</div>
+<!-- ~광고 -->

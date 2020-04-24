@@ -11,7 +11,7 @@
 			<img alt="Minee LOGO" src="../resources/img/result/resultLogo.png">
 		</a>
 		<form class="search_form" action="search" method="get">
-			<input type="text" name="keyword" placeholder="Minee 검색">
+			<input type="text" name="keyword" placeholder="Minee 검색" value="${ keyword }">
 			<button class="search_btn"></button>
 		</form>
 	</div>
@@ -31,3 +31,7 @@
 </div>
 <div class="line"></div>
 
+
+<!-- 결과 컨테이너 -->
+<div class="result_container">
+<!-- 결과 컨테이너 끝은 common.jsp에서 -->

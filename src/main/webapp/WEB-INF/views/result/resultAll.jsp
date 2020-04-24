@@ -4,6 +4,7 @@
 <%@ include file = "/WEB-INF/views/common/header.jsp"%>
 	<title> ${ keyword } - Minee 검색</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/result/resultAll.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/result/common.css" />
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/result/resultHeader.jsp"%>
@@ -28,7 +29,7 @@
 	</div>
 	
 	<!-- 페이징 -->
-	<%@ include file="/WEB-INF/views/result/pager.jsp"%>
+	<%@ include file="/WEB-INF/views/result/common.jsp"%>
 	<!-- ~페이징 -->
 </body>
 </html> 

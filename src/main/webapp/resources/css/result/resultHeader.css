@@ -1,21 +1,18 @@
 @charset "UTF-8";
 
 .container {
-	margin: 0 auto;
+	margin: 20px 20px;
 	max-width: 800px;
 }
 
 .search_container {
 	overflow: hidden;
 	margin: 20px 0px;
+	position: relative;
 }
 
 .search_container > * {
 	float: left;
-}
-
-.search_container {
-	position: relative;
 }
 
 .search_form {
@@ -40,7 +37,7 @@
 	box-sizing: border-box;
 	width: 40px;
 	height: 40px;
-	background: url( "../img/home/searchBtn.png" ) no-repeat;
+	background: url( "../../img/home/searchBtn.png" ) no-repeat;
 	background-size: 40%;
 	background-position: center;
 	position: absolute;
@@ -85,6 +82,11 @@ select{
 	background-color: unset;
 }
 
+.result_container {
+	width: 840px;
+	float: left;
+}
+
 /* Responsible */
 @media ( min-width : 980px) {
 	.search_container .search_form {
@@ -100,6 +102,10 @@ select{
 }
 
 @media ( max-width : 980px) {
+	.container {
+		width: 100%;
+		margin: 20px auto;
+	}
 	.search_container {
 		width: 100%;
 		text-align: center;
@@ -115,7 +121,9 @@ select{
 	.tab_container{
 	 	margin: 0 10px;
 	}
-
+	.result_container {
+		width: 100%;
+	}
 }
 
 @media ( max-width : 980px) and ( min-width: 480px) {
@@ -123,8 +131,11 @@ select{
 }
 
 @media ( max-width : 480px) {
+	.container {
+		margin: 20px auto;
+	}
 	.tab_container > .tab_btn {
-		width: 50px;
+		width: 70px;
 		padding: 7px;
 	}
 	.search_form input[type='text']{

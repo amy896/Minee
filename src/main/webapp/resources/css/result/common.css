@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.pager {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.pager ul li {
+	display: inline;
+}
+
+.pager .selected {
+	color: orange;
+	font-weight: bold;
+}
+
+.result_img_ad {
+	margin: 20px 20px;
+	background-color: red;
+	width: 160px;
+	height: 600px;
+	float: left;
+}
+
+/* Responsible */
+@media ( min-width : 728px) and ( max-width : 1056px) {
+	.result_img_ad {
+		width: 728px;
+		height: 90px;
+	}
+}
+
+@media ( max-width : 728px) {
+	.result_img_ad {
+		margin: 20px auto;
+		width: 100%;
+		height: 90px;
+	}
+}

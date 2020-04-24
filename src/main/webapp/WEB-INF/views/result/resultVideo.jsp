@@ -4,6 +4,7 @@
 <%@ include file="/WEB-INF/views/common/header.jsp"%>
 	<title>${ keyword } - Minee 검색 </title>
 	<link rel="stylesheet" type="text/css" href="resources/css/result/resultVideo.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/result/common.css" />
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/result/resultHeader.jsp"%>
@@ -30,6 +31,6 @@
 		</ul>
 	</div>
 	
-	<%@ include file="/WEB-INF/views/result/pager.jsp" %>
+	<%@ include file="/WEB-INF/views/result/common.jsp" %>
 </body>
 </html>
