@@ -1,4 +1,4 @@
-package com.ceres.minee.vo;
+package com.ceres.minee.result.vo;
 
 public class ResultItem {
 	private String title;

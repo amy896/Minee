@@ -1,4 +1,4 @@
-package com.ceres.minee;
+package com.ceres.minee.home.controller;
 
 
 import org.springframework.stereotype.Controller;

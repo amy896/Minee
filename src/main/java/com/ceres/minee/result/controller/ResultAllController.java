@@ -1,4 +1,4 @@
-package com.ceres.minee;
+package com.ceres.minee.result.controller;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.ceres.minee.vo.ListItem;
-import com.ceres.minee.vo.ResultItem;
+import com.ceres.minee.result.Pager;
+import com.ceres.minee.result.vo.ListItem;
+import com.ceres.minee.result.vo.ResultItem;
 
 @Controller
 public class ResultAllController {
+	
 	private final int DATA_MAX_PER_PAGE = 10;
 	ArrayList<ResultItem> results;
 	Pager pager;
@@ -59,4 +61,5 @@ public class ResultAllController {
 		else
 			return "wrongAccess";
 	}
+	
 }

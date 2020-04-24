@@ -2,10 +2,10 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page session="false"%>
-<%@ include file = "/WEB-INF/views/header.jsp"%>
+<%@ include file = "/WEB-INF/views/common/header.jsp"%>
 <title>Minee</title>
-<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
-<link rel="stylesheet" type="text/css" href="resources/css/home.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/home/home.css" />
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <script type="text/javascript">
 

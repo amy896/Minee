@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ include file = "/WEB-INF/views/header.jsp"%>
+<%@ include file = "/WEB-INF/views/common/header.jsp"%>
 	<title> ${ keyword } - Minee 검색</title>
-	<link rel="stylesheet" type="text/css" href="resources/css/resultAll.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/result/resultAll.css" />
 </head>
 <body>
-	<%@ include file="/WEB-INF/views/resultHeader.jsp"%>
+	<%@ include file="/WEB-INF/views/result/resultHeader.jsp"%>
 	
 	<div class="resultAllContainer">
 		<ul>
@@ -28,7 +28,7 @@
 	</div>
 	
 	<!-- 페이징 -->
-	<%@ include file="/WEB-INF/views/pager.jsp"%>
+	<%@ include file="/WEB-INF/views/result/pager.jsp"%>
 	<!-- ~페이징 -->
 </body>
 </html> 

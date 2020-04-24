@@ -1,4 +1,4 @@
-package com.ceres.minee;
+package com.ceres.minee.result;
 
 import org.springframework.ui.Model;
 
